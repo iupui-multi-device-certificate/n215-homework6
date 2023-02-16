@@ -1,0 +1,60 @@
+$color_1: var(--brand-primary);
+
+/* using bootstrap breakpoints
+https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
+/* could be refactored to use a hamburger menu instead */
+.about-text {
+  margin-bottom: 6rem;
+}
+.quote {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "client-image quote-text" "client-image quote-text";
+  gap: 1.375rem;
+  padding-bottom: 2.25rem;
+}
+.client-image {
+  grid-area: client-image;
+}
+.quote-text {
+  grid-area: quote-text;
+  blockquote {
+    p {
+      padding-bottom: 1.25rem;
+      font-style: italic;
+    }
+  }
+}
+.quote-author {
+  text-align: right;
+  color: $color_1;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    text-align: center;
+    .logo {
+      display: none;
+    }
+    .links {
+      justify-content: center;
+    }
+  }
+  footer {
+    .copyright {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .quote {
+    width: 100%;
+    grid-template-columns: 260px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "client-image" "quote-text";
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+  }
+}
