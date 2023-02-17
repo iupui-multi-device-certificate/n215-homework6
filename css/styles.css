@@ -205,6 +205,7 @@ nav .links a {
 }
 .tour-teaser figure figcaption .figure-title {
   margin-bottom: 0;
+  white-space: nowrap;
 }
 .tour-teaser figure figcaption a {
   text-decoration: none;

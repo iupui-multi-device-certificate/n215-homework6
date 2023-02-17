@@ -33,7 +33,7 @@
       right: 0;
       bottom: 0;
 
-      color: #fff;
+      color: $brand-light;
 
       //TODO: fix Australia / long text not fitting
       //maybe media query?
@@ -44,10 +44,11 @@
       .figure-title {
         @extend %title-shared;
         margin-bottom: 0;
+        white-space: nowrap;
       }
       a {
         text-decoration: none;
-        color: #fff;
+        color: $brand-light;
         text-transform: uppercase;
       }
     }
