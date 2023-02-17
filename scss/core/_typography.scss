@@ -67,9 +67,13 @@ $base-font-size-in-px: 16;
   font-size: calc((30 / $base-font-size-in-px) * 1rem);
 }
 
-.title {
+%title-shared {
   font-family: $title-font-family;
   margin-bottom: 2.375rem;
+}
+
+.title {
+  @extend %title-shared;
 }
 
 .upper {

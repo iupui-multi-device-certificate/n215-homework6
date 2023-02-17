@@ -60,7 +60,7 @@
   font-size: 1.875rem;
 }
 
-.title {
+.tour-teasers .tour-teaser figcaption .figure-title, .title {
   font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
   margin-bottom: 2.375rem;
 }
@@ -216,6 +216,9 @@ nav .links a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+}
+.tour-teasers .tour-teaser figcaption .figure-title {
+  margin-bottom: 0;
 }
 .tour-teasers .tour-teaser figcaption a {
   text-decoration: none;
