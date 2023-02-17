@@ -8,26 +8,6 @@ body {
   font-weight: normal;
 }
 
-/* 
-  TODO: partial underline on header tags
-  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
-
-*/
-/* font sizes may need to be reduced on mobile */
-h1 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-family: $title-font-family;
-  margin-bottom: 2.375rem;
-}
-
-h2 {
-  font-size: 2.188rem;
-  text-transform: uppercase;
-  font-family: $title-font-family;
-  margin-bottom: 2.375rem;
-}
-
 .container {
   margin: 0 auto;
   width: 80%;

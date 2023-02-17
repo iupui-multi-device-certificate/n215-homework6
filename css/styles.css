@@ -42,6 +42,33 @@
   font-style: normal;
 }
 /* typography */
+/* 
+  TODO: partial underline on header tags
+  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
+
+*/
+/* font sizes may need to be reduced on mobile */
+.font-size-80 {
+  font-size: 3.75rem;
+}
+
+.font-size-60 {
+  font-size: 3.75rem;
+}
+
+.font-size-30 {
+  font-size: 1.875rem;
+}
+
+.title {
+  font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
+  margin-bottom: 2.375rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Gill Sans, sans-serif";
   /* base font size */
@@ -50,26 +77,6 @@ body {
 
 :is(h1, h2, h3, h4, h5, h6) {
   font-weight: normal;
-}
-
-/* 
-  TODO: partial underline on header tags
-  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
-
-*/
-/* font sizes may need to be reduced on mobile */
-h1 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
-  margin-bottom: 2.375rem;
-}
-
-h2 {
-  font-size: 2.188rem;
-  text-transform: uppercase;
-  font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
-  margin-bottom: 2.375rem;
 }
 
 .container {
@@ -212,9 +219,6 @@ nav .links a {
 }
 .tour-teasers .tour-teaser figcaption h1 {
   margin-bottom: 0;
-}
-.tour-teasers .tour-teaser figcaption h2 {
-  text-transform: unset;
 }
 .tour-teasers .tour-teaser figcaption a {
   text-decoration: none;

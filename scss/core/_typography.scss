@@ -44,3 +44,34 @@
 /* typography */
 $body-font-family: "Gill Sans, sans-serif";
 $title-font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
+
+/* 
+  TODO: partial underline on header tags
+  Methods found so far are rather hacky. Linear gradient probably best method, but need to look into this further.
+
+*/
+/* font sizes may need to be reduced on mobile */
+
+$base-font-size-in-px: 16;
+// use rem so scales with browser zoom (accessibility)
+//TODO: convert font-sizes to mixin
+.font-size-80 {
+  font-size: calc((60 / $base-font-size-in-px) * 1rem);
+}
+
+.font-size-60 {
+  font-size: calc((60 / $base-font-size-in-px) * 1rem);
+}
+
+.font-size-30 {
+  font-size: calc((30 / $base-font-size-in-px) * 1rem);
+}
+
+.title {
+  font-family: $title-font-family;
+  margin-bottom: 2.375rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
