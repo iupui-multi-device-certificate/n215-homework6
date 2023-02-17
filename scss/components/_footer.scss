@@ -27,3 +27,11 @@ footer {
     gap: 1.375rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  footer {
+    .copyright {
+      display: none;
+    }
+  }
+}

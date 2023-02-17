@@ -36,3 +36,15 @@ nav {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    text-align: center;
+    .logo {
+      display: none;
+    }
+    .links {
+      justify-content: center;
+    }
+  }
+}

@@ -31,22 +31,7 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
   text-align: right;
   color: $color_1;
 }
-@media only screen and (max-width: 768px) {
-  nav {
-    text-align: center;
-    .logo {
-      display: none;
-    }
-    .links {
-      justify-content: center;
-    }
-  }
-  footer {
-    .copyright {
-      display: none;
-    }
-  }
-}
+
 @media only screen and (max-width: 1280px) {
   .quote {
     width: 100%;
