@@ -60,7 +60,7 @@
   font-size: 1.875rem;
 }
 
-.tour-teasers .tour-teaser figcaption .figure-title, .title {
+.tour-teaser figcaption .figure-title, .title {
   font-family: "Proxima Nova Extra Condensed Thin, sans-serif";
   margin-bottom: 2.375rem;
 }
@@ -178,12 +178,13 @@ nav .links a {
   grid-template-columns: repeat(3, minmax(236px, 1fr));
   gap: 2rem;
 }
-.tour-teasers .tour-teaser {
+
+.tour-teaser {
   width: 236px;
   height: 304px;
   justify-self: center;
 }
-.tour-teasers .tour-teaser figure {
+.tour-teaser figure {
   width: 100%;
   height: 100%;
   position: relative;
@@ -192,7 +193,7 @@ nav .links a {
   padding: 30% 0;
   cursor: pointer;
 }
-.tour-teasers .tour-teaser figure::before {
+.tour-teaser figure::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -201,7 +202,7 @@ nav .links a {
   background: rgba(0, 0, 0, 0.5);
   content: "";
 }
-.tour-teasers .tour-teaser figcaption {
+.tour-teaser figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,15 +218,15 @@ nav .links a {
   transform: translate(-50%, -50%);
   color: #fff;
 }
-.tour-teasers .tour-teaser figcaption .figure-title {
+.tour-teaser figcaption .figure-title {
   margin-bottom: 0;
 }
-.tour-teasers .tour-teaser figcaption a {
+.tour-teaser figcaption a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-.tour-teasers .tour-teaser img {
+.tour-teaser img {
   position: absolute;
   top: 0;
   left: 0;
