@@ -1,0 +1,13 @@
+.tour-teasers {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(236px, 1fr));
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .tour-teasers {
+    grid-template-columns: 1fr;
+  }
+}

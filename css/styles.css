@@ -148,7 +148,13 @@ footer .social {
   border-radius: 1.25rem;
 }
 
+.tour-teaser {
+  justify-self: center;
+}
+
 .tour-teaser figure {
+  width: 236px;
+  height: 304px;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -173,16 +179,14 @@ footer .social {
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   padding: 2rem;
   text-align: center;
   opacity: 1;
-  transform: translateY(1rem);
-  transition: all 0.3s ease-in-out;
-  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tour-teaser figcaption h1 {
@@ -216,6 +220,19 @@ footer .social {
   transition: all 0.3s ease-in-out;
 }
 
+.tour-teasers {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(236px, 1fr));
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .tour-teasers {
+    grid-template-columns: 1fr;
+  }
+}
 /* using bootstrap breakpoints
 https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 /* could be refactored to use a hamburger menu instead */
