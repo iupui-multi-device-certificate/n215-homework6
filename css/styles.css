@@ -79,6 +79,47 @@ h2 {
   /* min-height: 100vh; */
 }
 
+.btn {
+  background-color: #79addc;
+  padding: 0.625rem 1.375rem;
+  border-radius: 1.25rem;
+}
+
+/* TODO: fix extra white space below footer on larger screens, e.g. 27" */
+footer {
+  background-color: #79addc;
+  height: 100px;
+}
+footer .footer-content {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo {
+  font-size: 1.25rem;
+  color: #fff;
+  padding-top: 30px;
+  border: solid thin;
+}
+footer .copyright {
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.375rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .copyright {
+    display: none;
+  }
+}
 /*  from bootstrap */
 /* prevents overlap issue have w/ fixed */
 .sticky-top {
@@ -123,47 +164,6 @@ nav .links a {
     justify-content: center;
   }
 }
-/* TODO: fix extra white space below footer on larger screens, e.g. 27" */
-footer {
-  background-color: #79addc;
-  height: 100px;
-}
-footer .footer-content {
-  height: 100%;
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-footer .logo {
-  font-size: 1.25rem;
-  color: #fff;
-  padding-top: 30px;
-  border: solid thin;
-}
-footer .copyright {
-  font-size: 0.75rem;
-  color: #ffffff;
-}
-footer .social {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 1.375rem;
-}
-
-@media only screen and (max-width: 768px) {
-  footer .copyright {
-    display: none;
-  }
-}
-.btn {
-  background-color: #79addc;
-  padding: 0.625rem 1.375rem;
-  border-radius: 1.25rem;
-}
-
 .tour-teasers {
   display: grid;
   align-content: center;
@@ -172,11 +172,13 @@ footer .social {
   gap: 2rem;
 }
 .tour-teasers .tour-teaser {
+  width: 236px;
+  height: 304px;
   justify-self: center;
 }
 .tour-teasers .tour-teaser figure {
-  width: 236px;
-  height: 304px;
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -184,13 +186,12 @@ footer .social {
   cursor: pointer;
 }
 .tour-teasers .tour-teaser figure::before {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33));
+  background: rgba(0, 0, 0, 0.5);
   content: "";
 }
 .tour-teasers .tour-teaser figcaption {
@@ -230,7 +231,6 @@ footer .social {
      object-fit: cover;
   mix-blend-mode: multiply;
   filter: saturate(0);
-  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 992px) {

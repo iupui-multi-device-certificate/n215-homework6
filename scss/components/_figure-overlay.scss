@@ -1,0 +1,67 @@
+@mixin figure-overlay($width: 236px, $height: 304px) {
+  width: $width;
+  height: $height;
+  figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 30% 0;
+    cursor: pointer;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      content: "";
+    }
+  }
+  figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    opacity: 1;
+    //fix text-centering per
+    //https://www.w3schools.com/howto/howto_css_image_text.asp
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+    //TODO: fix Australia / long text not fitting
+    //maybe media query?
+    //https://www.w3schools.com/howto/howto_css_responsive_text.asp
+    //or calculate font size for h1 & h2 based on screen
+    //https://blog.hubspot.com/website/responsive-text
+    h1 {
+      margin-bottom: 0;
+    }
+    h2 {
+      text-transform: unset;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    filter: saturate(0);
+  }
+}
