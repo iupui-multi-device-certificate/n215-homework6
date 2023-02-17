@@ -217,9 +217,6 @@ nav .links a {
   transform: translate(-50%, -50%);
   color: #fff;
 }
-.tour-teasers .tour-teaser figcaption h1 {
-  margin-bottom: 0;
-}
 .tour-teasers .tour-teaser figcaption a {
   text-decoration: none;
   color: #fff;
