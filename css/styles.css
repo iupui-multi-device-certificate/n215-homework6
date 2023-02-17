@@ -148,11 +148,17 @@ footer .social {
   border-radius: 1.25rem;
 }
 
-.tour-teaser {
+.tour-teasers {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(236px, 1fr));
+  gap: 2rem;
+}
+.tour-teasers .tour-teaser {
   justify-self: center;
 }
-
-.tour-teaser figure {
+.tour-teasers .tour-teaser figure {
   width: 236px;
   height: 304px;
   position: relative;
@@ -161,8 +167,7 @@ footer .social {
   padding: 30% 0;
   cursor: pointer;
 }
-
-.tour-teaser figure::before {
+.tour-teasers .tour-teaser figure::before {
   display: block;
   position: absolute;
   top: 0;
@@ -172,8 +177,7 @@ footer .social {
   background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33));
   content: "";
 }
-
-.tour-teaser figcaption {
+.tour-teasers .tour-teaser figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,27 +191,20 @@ footer .social {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.tour-teaser figcaption h1 {
-  margin-bottom: 0;
-}
-
-.tour-teaser figcaption h2 {
-  text-transform: unset;
-}
-
-.tour-teaser figcaption {
   color: #fff;
 }
-
-.tour-teaser figcaption a {
+.tour-teasers .tour-teaser figcaption h1 {
+  margin-bottom: 0;
+}
+.tour-teasers .tour-teaser figcaption h2 {
+  text-transform: unset;
+}
+.tour-teasers .tour-teaser figcaption a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-
-.tour-teaser img {
+.tour-teasers .tour-teaser img {
   position: absolute;
   top: 0;
   left: 0;
@@ -218,14 +215,6 @@ footer .social {
   mix-blend-mode: multiply;
   filter: saturate(0);
   transition: all 0.3s ease-in-out;
-}
-
-.tour-teasers {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  grid-template-columns: repeat(3, minmax(236px, 1fr));
-  gap: 2rem;
 }
 
 @media only screen and (max-width: 992px) {
