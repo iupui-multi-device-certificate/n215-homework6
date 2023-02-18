@@ -122,7 +122,7 @@ footer .social {
   gap: 1.375rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   footer .copyright {
     display: none;
   }
@@ -162,7 +162,7 @@ nav .links a {
   color: #000;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   nav {
     text-align: center;
   }
@@ -215,7 +215,7 @@ nav .links a {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 800px) {
   .tour-teasers {
     grid-template-columns: 1fr;
   }
@@ -312,7 +312,7 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
   color: var(--brand-primary);
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 800px) {
   .quote {
     width: 100%;
     grid-template-columns: 260px;
