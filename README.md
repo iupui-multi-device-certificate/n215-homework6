@@ -2,4 +2,4 @@
 
 ## Homework Three
 
-https://in-info-web4.informatics.iupui.edu/~rahensle/n215/homework-five/about.html
+https://in-info-web4.informatics.iupui.edu/~rahensle/n215/homework-six/tours.html
