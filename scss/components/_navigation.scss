@@ -10,6 +10,8 @@
 //TODO: need to increase nav contrast so more easily visible when scroll
 //TODO: need to theme so can have dark and light navbar
 //TODO: padding or margin bottom
+$spacing-nav: calc((48 / $base-font-size-in-px) * 1rem);
+
 nav {
   margin-left: auto;
   margin-right: auto;
@@ -21,6 +23,7 @@ nav {
   color: $brand-dark;
 
   border-bottom: 1px solid;
+  margin-bottom: $spacing-nav;
 
   // text-shadow: 1px 1px 1px black;
   .logo {

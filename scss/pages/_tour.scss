@@ -1,0 +1,14 @@
+$spacing-image: calc((42 / $base-font-size-in-px) * 1rem);
+$spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
+
+.tour-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-image;
+  margin-bottom: calc((29 / $base-font-size-in-px) * 1rem);
+}
+
+.day {
+  padding-bottom: $spacing-text;
+}

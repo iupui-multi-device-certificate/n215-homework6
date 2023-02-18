@@ -1,10 +1,13 @@
+$spacing-banner: calc((48 / $base-font-size-in-px) * 1rem);
+
 // https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h
 //TODO: refactor to mixin or extend class
+//TODO: fix height of image?
 .banner-large {
   width: 100%;
   height: auto;
   position: relative;
-
+  margin-bottom: $spacing-banner;
   img {
     filter: brightness(50%);
     object-fit: cover;

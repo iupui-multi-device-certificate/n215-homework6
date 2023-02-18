@@ -145,6 +145,7 @@ nav {
   justify-content: space-between;
   color: #000;
   border-bottom: 1px solid;
+  margin-bottom: 3rem;
 }
 nav .logo {
   font-size: 1.25rem;
@@ -222,6 +223,7 @@ nav .links a {
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 3rem;
 }
 .banner-large img {
   filter: brightness(50%);
@@ -319,4 +321,15 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
     padding-bottom: 0.5rem;
     justify-content: center;
   }
+}
+.tour-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.625rem;
+  margin-bottom: 1.8125rem;
+}
+
+.day {
+  padding-bottom: 4.375rem;
 }
