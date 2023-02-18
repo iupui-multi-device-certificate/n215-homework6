@@ -242,7 +242,6 @@ nav .links a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 1.875rem;
 }
 .banner-large .banner-text .align-right {
   text-align: right;
@@ -325,6 +324,7 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2.625rem;
   margin-bottom: 1.8125rem;
 }

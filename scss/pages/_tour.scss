@@ -5,6 +5,7 @@ $spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: $spacing-image;
   margin-bottom: calc((29 / $base-font-size-in-px) * 1rem);
 }
@@ -14,7 +15,6 @@ $spacing-text: calc((70 / $base-font-size-in-px) * 1rem);
 }
 
 .outro {
-  //TODO: responsive sizes after fix footer spacing
   padding: 80px 0 200px 0;
   display: flex;
   justify-content: center;
