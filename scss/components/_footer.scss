@@ -1,6 +1,5 @@
-/* TODO: fix extra white space below footer on larger screens, e.g. 27" */
 footer {
-  background-color: #79addc;
+  background-color: $brand-primary;
   height: 100px;
   .footer-content {
     height: 100%;
@@ -12,13 +11,13 @@ footer {
   }
   .logo {
     font-size: 1.25rem;
-    color: #fff;
+    color: $brand-light;
     padding-top: 30px;
     border: solid thin;
   }
   .copyright {
     font-size: 0.75rem;
-    color: #ffffff;
+    color: $brand-light;
   }
   .social {
     display: flex;

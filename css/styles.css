@@ -92,7 +92,6 @@ body {
   border-radius: 1.25rem;
 }
 
-/* TODO: fix extra white space below footer on larger screens, e.g. 27" */
 footer {
   background-color: #79addc;
   height: 100px;
@@ -113,7 +112,7 @@ footer .logo {
 }
 footer .copyright {
   font-size: 0.75rem;
-  color: #ffffff;
+  color: #fff;
 }
 footer .social {
   display: flex;
