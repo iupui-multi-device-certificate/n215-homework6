@@ -7,12 +7,11 @@
   z-index: 1020;
 }
 
-//TODO: need to increase nav contrast so more easily visible when scroll
 //TODO: need to theme so can have dark and light navbar
-//TODO: padding or margin bottom
 $spacing-nav: calc((48 / $base-font-size-in-px) * 1rem);
 
 nav {
+  background-color: rgba($brand-light, 0.1);
   margin-left: auto;
   margin-right: auto;
   height: 90px;
@@ -32,11 +31,11 @@ nav {
     border: solid thin;
   }
   .links {
-    color: #79addc;
+    color: $brand-primary;
     a {
       text-decoration: none;
       font-size: 15px;
-      color: #000;
+      color: $brand-dark;
     }
   }
 }
