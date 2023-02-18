@@ -89,6 +89,9 @@ body {
   background-color: #79addc;
   padding: 0.625rem 1.375rem;
   border-radius: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 footer {
@@ -206,11 +209,6 @@ nav .links a {
 .tour-teaser figure figcaption .figure-title {
   margin-bottom: 0;
   white-space: nowrap;
-}
-.tour-teaser figure figcaption a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 800px) {
@@ -331,4 +329,10 @@ https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
 
 .day {
   padding-bottom: 4.375rem;
+}
+
+.outro {
+  padding: 80px 0 200px 0;
+  display: flex;
+  justify-content: center;
 }
