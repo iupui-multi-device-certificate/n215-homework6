@@ -96,6 +96,7 @@ body {
 
 footer {
   background-color: #79addc;
+  margin-top: 12.5rem;
   height: 100px;
 }
 footer .footer-content {
@@ -251,6 +252,7 @@ nav .links a {
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 3rem;
 }
 .banner-medium img {
   filter: brightness(50%);
